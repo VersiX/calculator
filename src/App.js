@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import './calculator-modules/calculator.css';
+import CalculatorTop from './calculator-modules/calculator-head';
+import Display from './calculator-modules/calculator-display';
+import Numpad from './calculator-modules/calculator-numpad';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="calc">
+        <CalculatorTop />
+        <Display />
+        <Numpad />
+
+
+      </div>
     </div>
   );
 }
